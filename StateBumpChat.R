@@ -24,7 +24,7 @@ dfm<-data.matrix(df01[,2:3])
 rnames <- df01$State
 rownames(dfm)<- rnames
 
-#label data points with state names and respective values
+#label data points with state names and respective values, add a space
 
 vallab<-c(paste(dfm[,2],rownames(dfm),sep="  "),
           paste(rownames(dfm),dfm[,1],sep="  "))
